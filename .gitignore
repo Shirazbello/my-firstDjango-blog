@@ -11,9 +11,9 @@ venv/
 # Database
 db.sqlite3
 
-# Static folder
-static/
-
+# Static folder 
+Lib/site-packages/django/contrib/admin/static/
+Lib/site-packages/django/contrib/gis/static/
 # macOS
 ._*
 .DS_Store
