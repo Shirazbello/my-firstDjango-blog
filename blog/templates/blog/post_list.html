@@ -18,5 +18,14 @@
             <h2><a href="">My second post</a></h2>
             <p>"We like to give people the freedom to work where they want, safe in the knowledge that they have the drive and expertise to perform excellently, whether they at their desk or in their kitchen. Yours truly has never worked out of an office, and never will." — Sir Richard Branson, Virgin America f.</p>
         </div>
+   
+     {% for post in posts %}
+    	<div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    	</div>
+	{% endfor %}
+       
 </body>
 </html>
